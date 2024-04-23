@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+    width: 100%;
+}
+
+
+.currencies-container{
+    width: 641px;
+    margin:auto;
+}
+.container-header{
+    font-size: 36px;
+    font-family: RobotoBold;
+    line-height: 42.19px;
+    margin-bottom: 33px;
+}
+
+.currencies{
+    display: flex;
+    gap:123px;
+}
+
+.currencies p.currency-text{
+    color: #9F9F9F;
+    font-size: 12px;
+    margin-bottom: 11px;
+}
+
+.currency-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 21px;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    height: 30px;
+    width: 259px;
+}
+
+.currency-buttons button{
+    flex:1;
+    border: none;
+    color:#C6C6C6;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+.currency-buttons button:last-child{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.currency-buttons button:first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.currency-buttons button.selected-button{
+    background-color: #833AE0;
+    color:#FFFFFF;
+}
+
+.currency-buttons button:not(:last-child){
+    border-right: 1px solid #E5E5E5;
+}
+
+.currencies .input-container{
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    width:259px;
+    height: 102px;
+    padding:11px 14px 5px 14px;
+}
+
+.currencies .input-container input{
+    height: 38px;
+    font-size:36px;
+    font-family: RobotoBold;
+    width: 100%;
+    border: none;
+    outline:none;
+    margin-bottom:20px;
+}
+
+.currencies .input-container p{
+    font-size: 12px;
+    color:#C6C6C6;
+}
