@@ -11,8 +11,8 @@
         <div class="currencies-container">
             <h1 class="container-header">Конвертер валют онлайн</h1>
             <div class="currencies">
-                <div class="currency-from">
-                    <p class="currency-text">У меня есть </p>
+                <div id="currency-from">
+                    <p class="currency-text">У меня есть</p>
                     <div class="currency-buttons">
                         <button class="selected-button">RUB</button>
                         <button>USD</button>
@@ -20,25 +20,26 @@
                         <button>GBP</button>
                     </div>
                     <div class="input-container">
-                        <input type="text">
-                        <p>1 RUB = 0.0135 USD</p>
+                        <input id="input-from" type="number">
+                        <p id='currency-description-from'class="currency-description">1 RUB = 0.0135 USD</p>
                     </div>
                 </div>
-                <div class="currency-to">
+                <div id="currency-to">
                     <p class="currency-text">Хочу приобрести</p>
                     <div class="currency-buttons">
                         <button>RUB</button>
-                        <button>USD</button>
+                        <button class="selected-button">USD</button>
                         <button>EUR</button>
                         <button>GBP</button>
                     </div>
                     <div class="input-container">
-                        <input type="text">
-                        <p>1 USD = 73.8896 RUB</p>
+                        <input id="input-to" type="number">
+                        <p id='currency-description-to' class="currency-description">1 USD = 73.8896 RUB</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="/scripts/script.js"></script>  
 </body>
 </html>
