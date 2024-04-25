@@ -22,7 +22,7 @@ body{
 
 .currencies-container{
     width: 641px;
-    margin:auto;
+    margin: 100px auto;
 }
 .container-header{
     font-size: 36px;
@@ -54,7 +54,7 @@ body{
 
 .currency-buttons button{
     flex:1;
-    border: none;
+    border: 1px solid #E5E5E5;
     color:#C6C6C6;
     font-size: 12px;
     background-color: transparent;
@@ -71,6 +71,7 @@ body{
 }
 
 .currency-buttons button.selected-button{
+    border-color: #833AE0;
     background-color: #833AE0;
     color:#FFFFFF;
 }
