@@ -46,7 +46,6 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 21px;
-    border: 1px solid #E5E5E5;
     border-radius: 3px;
     height: 30px;
     width: 259px;
@@ -66,20 +65,19 @@ body{
 }
 
 .currency-buttons button:first-child{
+    border-right: none;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
+.currency-buttons button:not(:first-child):not(:last-child){
+    border-right: none;
+}
 .currency-buttons button.selected-button{
     border-color: #833AE0;
     background-color: #833AE0;
     color:#FFFFFF;
 }
-
-.currency-buttons button:not(:last-child){
-    border-right: 1px solid #E5E5E5;
-}
-
 .currencies .input-container{
     border: 1px solid #E5E5E5;
     border-radius: 3px;
