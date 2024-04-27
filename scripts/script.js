@@ -19,9 +19,9 @@ const getCurrencyData = async (event) => {
         const data2 = await response2.json();
 
         if(event.target===resultInput){
-            fromInput.value = Number(resultInput.value) * data2[`${buttonSelectedTo.toLowerCase()}`][`${buttonSelectedFrom.toLowerCase()}`];
+            fromInput.value = (Number(resultInput.value) * data2[`${buttonSelectedTo.toLowerCase()}`][`${buttonSelectedFrom.toLowerCase()}`]).toFixed(2);
         }else{
-            resultInput.value = Number(fromInput.value) * data1[`${buttonSelectedFrom.toLowerCase()}`][`${buttonSelectedTo.toLowerCase()}`];
+            resultInput.value = (Number(fromInput.value) * data1[`${buttonSelectedFrom.toLowerCase()}`][`${buttonSelectedTo.toLowerCase()}`]).toFixed(2);
         }
         const currencyDescriptionFrom = document.getElementById('currency-description-from');
         currencyDescriptionFrom.textContent = `1 ${buttonSelectedFrom} = ${data1[`${buttonSelectedFrom.toLowerCase()}`][buttonSelectedTo.toLowerCase()]} ${buttonSelectedTo}` ;
